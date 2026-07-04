@@ -1,0 +1,14 @@
+'cfaure','hmercier','lblanc' | ForEach-Object { Get-ADUser $_ -ErrorAction SilentlyContinue | Remove-ADUser -Confirm:$false }
+
+
+
+Remettre le fichier Onboarding 
+
+
+
+cd "C:\Scripts"
+
+Unblock-File .\Onboarding_RGPD_slide33.ps1
+
+
+.\Onboarding_RGPD_slide33.ps1
